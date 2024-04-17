@@ -17,8 +17,4 @@ logoElement.addEventListener("click", (event) => {
   event.target.href = "/"
   router.handle(event)
 })
-
-function teste(event) {
-  event.preventDefault()
-  console.log("aaaaaaaa")
-}
+ 
