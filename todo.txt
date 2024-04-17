@@ -1,0 +1,2 @@
+- botao de quero saber mais
+- estilização das outras páginas

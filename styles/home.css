@@ -1,0 +1,29 @@
+body {
+  background-image: url('../assets/home.png');
+}
+
+.container {
+  display: grid;
+  place-content: center;
+  height: 70vh;
+}
+
+.container a {
+  background-color: transparent;
+  color: var(--fc-primary);
+  border: 0.1rem solid var(--fc-primary);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.4rem;
+  padding: 1.2rem 3.2rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  width: fit-content;
+  justify-self: center;
+}
+
+.container a:hover {
+  background-color: var(--fc-primary);
+  color: var(--fc-second);
+  border: 0.1rem solid var(--fc-primary);
+}
