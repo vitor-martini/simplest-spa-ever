@@ -1,3 +1,5 @@
+import { toggleActive } from "./active.js"
+
 export class Router {
   routes = {}
 
@@ -13,9 +15,10 @@ export class Router {
 
   route() {
     const { pathname } = window.location 
-    const route = this.routes[pathname] || this.routes["/error"]
+    const route = this.routes[pathname] || this.routes["/"]
     const page = document.getElementById("page")
-  
+    toggleActive(route.split("/").pop().replace(".html", ""))
+
     fetch(route)
       .then(data => data.text())
       .then(html => page.innerHTML = html)
